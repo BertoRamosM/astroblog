@@ -22,11 +22,14 @@ const Navbar = () => {
       <div className="hidden sm:block">
         <Icons />
       </div>
-      <h1 className="font-bold text-2xl hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100 px-4">
+      <h1 className="font-bold text-2xl hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100 px-4 z-50">
         Berto<span className="font-light">Blog</span>
       </h1>
 
-      <div className="fixed sm:hidden right-0 px-4 z-50" onClick={handleOpen}>
+      <div
+        className="fixed sm:hidden right-0 px-4 z-50 hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100"
+        onClick={handleOpen}
+      >
         <BurgerIcon />
       </div>
 
