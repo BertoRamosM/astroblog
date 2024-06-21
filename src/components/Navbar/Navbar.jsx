@@ -9,8 +9,7 @@ import BurgerIcon from "../../icons/BurgerIcon";
 import React, { useState } from 'react'
 import FullLinks from "./navbarComponents/FullLinks";
 
-const Navbar = () => {
-  const links = [{ name: "Home" }, { name: "Posts" }, { name: "Contact" }];
+const Navbar = ({links}) => {
 
   const [isOpen, setIsOpen] = useState(false)
   
