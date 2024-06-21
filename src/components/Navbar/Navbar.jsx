@@ -14,9 +14,9 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   
-  const handleOpen = () => {
-    setIsOpen(prev => !prev);
-  }
+    const handleOpen = () => {
+      setIsOpen((prev) => !prev);
+    };
   return (
     <nav className="backdrop-blur-lg w-full text-zinc-100 h-20 flex items-center justify-between border-b bottom-1 border-gray-800">
       <div className="hidden sm:block">
@@ -26,19 +26,19 @@ const Navbar = () => {
         Berto<span className="font-light">Blog</span>
       </h1>
 
-      <div className="block sm:hidden px-4" onClick={handleOpen}>
+      <div className="fixed sm:hidden right-0 px-4 z-50" onClick={handleOpen}>
         <BurgerIcon />
       </div>
 
-      {isOpen ? (
-        <div className="absolute h-screen backdrop-blur-lg w-screen">
+      {isOpen && (
+        <div className="block sm:hidden">
           <FullLinks links={links} />
         </div>
-      ) : (
-        <div className="hidden sm:block">
-          <Links links={links} />
-        </div>
       )}
+
+      <div className="hidden sm:block">
+        <Links links={links} />
+      </div>
     </nav>
   );
 }
