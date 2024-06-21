@@ -4,7 +4,7 @@ import Icons from "../Navbar/navbarComponents/Icons.jsx"
 
 
 
-const Footer = ({links}) => {
+const Footer = ({ links, iconsLink }) => {
   return (
     <div className="bottom-0 backdrop-blur-lg w-full text-zinc-100 h-36 flex items-center justify-around gradient-mask-t-0 border-none max-w-full">
       <div className="w-1/2 flex flex-col gap-8 pl-4">
@@ -22,10 +22,10 @@ const Footer = ({links}) => {
       </div>
       <div className="flex items-center gap-2 sm:gap-6 flex-col text-xs sm:text-sm">
         <Links links={links} />
-        <Icons />
+        <Icons/>
       </div>
     </div>
   );
-}
+};
 
 export default Footer

@@ -2,15 +2,29 @@
 import Footer from "../components/Footer/Footer.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
 const { title } = Astro.props;
+import { ViewTransitions } from "astro:transitions";
+import PortfolioIcon from "../icons/PortfolioIcon.jsx";
+import LinkedinIcon from "../icons/LinkedinIcon.jsx";
+import GithubIcon from "../icons/GithubIcon.jsx";
 
-const links = [{ name: "Home", link:"/" }, { name: "About", link:"/about" }, { name: "Posts", link:"/posts" }, { name: "Contact", link:"/contact" }];
+const links = [
+  { name: "Home", link: "/" },
+  { name: "About", link: "/about" },
+  { name: "Posts", link: "/posts" },
+  { name: "Contact", link: "/contact" },
+];
+
+
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/images/dragon-rem.web" type="image/webp" />
+
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body
     class="min-h-screen w-full flex items-center justify-center flex-col text-zinc-100"
@@ -21,6 +35,6 @@ const links = [{ name: "Home", link:"/" }, { name: "About", link:"/about" }, { n
     <main class="flex-grow">
       <slot />
     </main>
-    <Footer links={links} />
+    <Footer links={links}  />
   </body>
 </html>
