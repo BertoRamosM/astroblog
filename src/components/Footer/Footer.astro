@@ -1,15 +1,15 @@
 ---
-import Links from "../Navbar/navbarComponents/Links.astro";
-import Icons from "../Navbar/navbarComponents/Icons.astro";
+import Links from "../Navbar/navbarComponents/Links.jsx"
+import Icons from "../Navbar/navbarComponents/Icons.jsx"
 import Logo from "../../../public/images/logoPerso.png";
 import { Image } from "astro:assets";
 ---
 
 <div
-  class="bottom-0 backdrop-blur-lg w-full text-zinc-100 h-24 flex items-center justify-around border-t border-gray-800"
+  class="bottom-0 backdrop-blur-lg w-full text-zinc-100 h-32 flex items-center justify-around border-t border-gray-800"
 >
-  <div class="">
-    <div class="">
+  <div class="w-1/2 flex flex-col gap-4">
+    <div class="flex items-center align-center gap-4">
       <Image
         src={Logo}
         alt="perso logo"
@@ -17,14 +17,19 @@ import { Image } from "astro:assets";
         width={48}
         class="rounded-full"
       />
+      <h1
+        class="font-bold text-2xl hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100"
+      >
+        Berto<span class="font-light">Blog</span>
+      </h1>
     </div>
     <p>
-      This is my personal blog, feel free to navigate and read my post, contact
-      me if there is something you dislike abbout it. The main goal of it was to
-      practice web development.
+      This is my personal blog. Feel free to navigate and read my posts. Contact
+      me if there is something you dislike about it. The main goal of this blog
+      is to practice web development.
     </p>
   </div>
-  <div class="flex items-center gap-2">
+  <div class="flex items-center gap-2 flex-col">
     <Links />
     <Icons />
   </div>
