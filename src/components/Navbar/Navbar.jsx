@@ -4,7 +4,7 @@ import BurgerIcon from "../../icons/BurgerIcon";
 import React, { useState } from "react";
 import FullLinks from "./navbarComponents/FullLinks";
 
-const Navbar = ({ links, iconsLink }) => {
+const Navbar = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
@@ -14,7 +14,7 @@ const Navbar = ({ links, iconsLink }) => {
   return (
     <nav className="backdrop-blur-lg w-full text-zinc-100 h-20 flex items-center justify-around gradient-mask-b-0 border-none relative z-30">
       <div className="hidden sm:block">
-        <Icons iconsLink={iconsLink} />
+        <Icons />
       </div>
       <a
         href="/"
