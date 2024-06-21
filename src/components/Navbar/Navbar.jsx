@@ -20,7 +20,7 @@ const Navbar = ({ links, iconsLink }) => {
       </div>
       <a
         href="/"
-        className="font-bold text-2xl hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100 px-4 z-50"
+        className="fixed font-bold text-2xl hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100 px-4 z-50"
       >
         Berto<span className="font-light">Blog</span>
       </a>
