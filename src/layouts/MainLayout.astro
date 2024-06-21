@@ -1,0 +1,25 @@
+---
+import Footer from "../components/Footer/Footer.astro";
+import Navbar from "../components/Navbar/Navbar.astro";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body
+    class="h-full w-full flex items-center justify-center flex-col"
+    style="background-image: url('/images/dragon.webp');"
+  >
+    <Navbar />
+    <header title={title}></header>
+    <main class="flex-grow">
+      <slot />
+      <!-- your content is injected here -->
+    </main>
+    <Footer />
+  </body>
+</html>
