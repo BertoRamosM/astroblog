@@ -17,13 +17,13 @@ const Navbar = ({links}) => {
       setIsOpen((prev) => !prev);
     };
   return (
-    <nav className="backdrop-blur-lg w-full text-zinc-100 h-20 flex items-center justify-between gradient-mask-b-0 border-none">
+    <nav className="backdrop-blur-lg w-full text-zinc-100 h-20 flex items-center justify-around gradient-mask-b-0 border-none">
       <div className="hidden sm:block">
         <Icons />
       </div>
-      <h1 className="font-bold text-2xl hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100 px-4 z-50">
+      <a href="/" className="font-bold text-2xl hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100 px-4 z-50">
         Berto<span className="font-light">Blog</span>
-      </h1>
+      </a>
 
       <div
         className="fixed sm:hidden right-0 px-4 z-50 hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100"

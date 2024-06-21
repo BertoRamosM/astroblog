@@ -1,16 +1,23 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import ArrowLeft from "../icons/ArrowLeft.jsx"
 
 const title = "Berto Ramos Blog";
 ---
 
 <MainLayout title={title}>
   <div
-    class="text-white flex flex-col items-center pt-14 h-screen w-screen text-5xl gap-8 backdrop-blur-lg gradient-mask-b-0 gradient-mask-t-0"
+    class="text-white flex flex-col items-center p-20 mt-8 h-full text-5xl gap-8 backdrop-blur-lg gradient-mask-b-0 gradient-mask-t-0 rounded-xl"
   >
     <h1 class="text-red-500 text-6xl font-black">404</h1>
-    <h3 class="font-black text-4xl">
+    <h3 class="font-black text-3xl">
       This page is as lost as your last pair of matching socks.
     </h3>
+    <a
+      class="font-black text-2xl hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100 flex gap-4 items-center justify-center"
+      href="/">
+      <ArrowLeft />
+      Back to main page</a
+    >
   </div>
 </MainLayout>

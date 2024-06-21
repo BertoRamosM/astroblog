@@ -6,8 +6,8 @@ import Icons from "../Navbar/navbarComponents/Icons.jsx"
 
 const Footer = ({links}) => {
   return (
-    <div className="bottom-0 backdrop-blur-lg w-full text-zinc-100 h-36 flex items-center justify-around gradient-mask-t-0 border-none">
-      <div className="w-1/2 flex flex-col gap-4">
+    <div className="bottom-0 backdrop-blur-lg w-full text-zinc-100 h-36 flex items-center justify-around gradient-mask-t-0 border-none max-w-full">
+      <div className="w-1/2 flex flex-col gap-8 pl-4">
         <div className="flex items-center align-center gap-4">
           <img
             src="/images/logoPerso.png"
@@ -18,9 +18,9 @@ const Footer = ({links}) => {
             Berto<span class="font-light">Blog</span>
           </h1>
         </div>
-        <p>Powered by coffee, code, and occasional memes.</p>
+        <p className="text-xs sm:text-lg">Powered by coffee, code and memes.</p>
       </div>
-      <div className="flex items-center gap-6 flex-col">
+      <div className="flex items-center gap-2 sm:gap-6 flex-col text-xs sm:text-sm">
         <Links links={links} />
         <Icons />
       </div>

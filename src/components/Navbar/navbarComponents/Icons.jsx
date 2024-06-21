@@ -10,11 +10,9 @@ const icons = [
 ];
 
 
-import React from 'react'
-
 const Icons = () => {
   return (
-    <div className="flex px-4 gap-8">
+    <div className="flex gap-6">
       {icons.map(({ component: Icon }, index) => (
         <div
           className="hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100"
