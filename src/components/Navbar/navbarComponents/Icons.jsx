@@ -19,6 +19,7 @@ const Icons = () => {
       {iconsLink.map(({ component: Icon, link }, index) => (
         <a
           href={`${link}`}
+          target="_blank"
           rel="noopener noreferrer"
           className="hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100"
           key={index}

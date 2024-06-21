@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const FullLinks = ({links}) => {
+const FullLinks = ({ links }) => {
   return (
     <div
-      className={`flex px-4 gap-8 flex-col justify-center items-center absolute top-0 left-0 h-screen w-screen backdrop-blur-lg z-40 bg-opacity-90 bg-gray-900`}
+      className={`flex px-4 gap-8 flex-col justify-center items-center fixed top-0 left-0 h-screen w-screen backdrop-blur-lg z-50 bg-opacity-90 bg-gray-900`}
     >
       {links?.map((item, index) => (
         <a
@@ -16,6 +16,6 @@ const FullLinks = ({links}) => {
       ))}
     </div>
   );
-}
+};
 
-export default FullLinks
+export default FullLinks;

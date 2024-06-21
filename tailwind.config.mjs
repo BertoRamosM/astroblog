@@ -6,9 +6,13 @@ export default {
       backgroundImage: {
         dragon: "url('/images/dragon.webp')",
       },
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+      },
+      fontFamily: {
+        quick: ["Quicksand", "sans-serif"],
+      },
     },
   },
-  plugins: [
-  [require("tailwind-gradient-mask-image")]
-  ],
+  plugins: [[require("tailwind-gradient-mask-image")]],
 };

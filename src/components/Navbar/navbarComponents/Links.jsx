@@ -1,7 +1,7 @@
 
 const Links = ({ links}) => {
   return (
-    <div className="flex gap-8">
+    <div className="flex gap-2 sm:gap-8">
       {links?.map((item, index) => (
         <a
           href={item.link}

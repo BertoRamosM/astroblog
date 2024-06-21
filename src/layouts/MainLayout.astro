@@ -3,9 +3,6 @@ import Footer from "../components/Footer/Footer.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
 const { title } = Astro.props;
 import { ViewTransitions } from "astro:transitions";
-import PortfolioIcon from "../icons/PortfolioIcon.jsx";
-import LinkedinIcon from "../icons/LinkedinIcon.jsx";
-import GithubIcon from "../icons/GithubIcon.jsx";
 
 const links = [
   { name: "Home", link: "/" },
@@ -13,8 +10,6 @@ const links = [
   { name: "Posts", link: "/posts" },
   { name: "Contact", link: "/contact" },
 ];
-
-
 ---
 
 <html lang="en">
@@ -22,12 +17,20 @@ const links = [
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/images/dragon-rem.web" type="image/webp" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+    />
 
     <title>{title}</title>
     <ViewTransitions />
   </head>
   <body
-    class="min-h-screen w-full flex items-center justify-center flex-col text-zinc-100"
+    class="min-h-screen w-full flex items-center justify-center flex-col text-zinc-100 font-quick"
     style="background-image: url('/images/dragon.webp');"
   >
     <Navbar client:load links={links} />
@@ -35,6 +38,6 @@ const links = [
     <main class="flex-grow w-[80%]">
       <slot />
     </main>
-    <Footer links={links}  />
+    <Footer links={links} />
   </body>
 </html>
