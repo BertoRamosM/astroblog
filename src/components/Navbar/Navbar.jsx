@@ -17,7 +17,7 @@ const Navbar = ({links}) => {
       setIsOpen((prev) => !prev);
     };
   return (
-    <nav className="backdrop-blur-lg w-full text-zinc-100 h-20 flex items-center justify-between border-b bottom-1 border-gray-800">
+    <nav className="backdrop-blur-lg w-full text-zinc-100 h-20 flex items-center justify-between gradient-mask-b-0 border-none">
       <div className="hidden sm:block">
         <Icons />
       </div>
