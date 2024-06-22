@@ -2,7 +2,7 @@
 title: "Introduction to JS"
 pubDate: "2024-06-21"
 author: "John Doe"
-image: "https://example.com/images/js.jpg"
+image: "/images/postImages/js.png"
 tags: ["JS", "Web Development"]
 slug: "introduction-to-js"
 ---

@@ -2,7 +2,7 @@
 title: "Introduction to Front-End Frameworks"
 pubDate: "2024-06-24"
 author: "Michael Brown"
-image: "https://example.com/images/front-end-frameworks.jpg"
+image: "/images/postImages/react.png"
 tags: ["Front-End", "Frameworks", "Web Development"]
 slug: "introduction-to-front-end-frameworks"
 ---

@@ -2,7 +2,7 @@
 title: "Responsive Web Design"
 pubDate: "2024-06-23"
 author: "Alice Johnson"
-image: "https://example.com/images/responsive-design.jpg"
+image: "/images/postImages/rd.webp"
 tags: ["Responsive Design", "CSS", "Web Development"]
 slug: "responsive-web-design"
 ---

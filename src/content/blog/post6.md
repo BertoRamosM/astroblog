@@ -2,10 +2,11 @@
 title: "Introduction to Back-End Development"
 pubDate: "2024-06-26"
 author: "William Lee"
-image: "https://example.com/images/back-end-development.jpg"
+image: "/images/postImages/node.png"
 tags: ["Back-End", "Web Development", "Node.js", "Django"]
 slug: "introduction-to-back-end-development"
 ---
+
 
 ### Post 6: Introduction to Back-End Development
 

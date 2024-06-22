@@ -2,7 +2,7 @@
 title: "Working with APIs"
 pubDate: "2024-06-25"
 author: "Emma Davis"
-image: "https://example.com/images/apis.jpg"
+image: "/images/postImages/api.png"
 tags: ["APIs", "JavaScript", "Web Development"]
 slug: "working-with-apis"
 ---

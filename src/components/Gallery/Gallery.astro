@@ -7,9 +7,12 @@ const allBlogArticles: collectionEntry<'blog'>[] = await getCollection('blog')
 import GalleryCard from "./GalleryCard/GalleryCard.jsx"
 ---
 
-<div class="h-full grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 py-12">
-  {allBlogArticles.map(article => (
-    <GalleryCard article={article}/>
-    </div>
-  ))}
+<div class="h-full grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 pt-12 pb-24">
+ {allBlogArticles ? (
+        allBlogArticles.map(article => (
+          <GalleryCard key={article.slug} article={article} />
+        ))
+      ) : (
+        <p>Loading...</p>
+      )}
 </div>
