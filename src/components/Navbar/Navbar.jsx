@@ -18,13 +18,13 @@ const Navbar = ({ links }) => {
       </div>
       <a
         href="/"
-        className="fixed font-bold text-2xl hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100 px-4 z-[100]"
+        className="font-bold text-2xl hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100 px-4 z-[100]"
       >
         Berto<span className="font-light">Blog</span>
       </a>
 
       <div
-        className="fixed sm:hidden right-0 px-4 z-[100] hover:text-red-500 cursor-pointer hover:scale-105 transition-all duration-100"
+        className="fixed sm:hidden right-0 px-4 z-[100] hover:text-red-500 cursor-pointer  transition-all duration-100"
         onClick={handleOpen}
       >
         <BurgerIcon />
