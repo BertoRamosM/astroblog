@@ -18,7 +18,7 @@ const Footer = ({ links }) => {
             Berto<span class="font-light">Blog</span>
           </a>
         </div>
-        <p className="text-xs sm:text-lg">Powered by coffee, code and memes.</p>
+        <p className="text-xs sm:text-lg">Powered by coffee, code and cat memes.</p>
       </div>
       <div className="flex items-center gap-3 sm:gap-8 flex-col text-xs sm:text-sm">
         <Links links={links} />
