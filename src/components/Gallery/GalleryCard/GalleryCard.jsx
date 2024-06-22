@@ -34,7 +34,7 @@ const GalleryCard = ({ article }) => {
         <div className="flex gap-4 flex-wrap">
           {article.data.tags.map((tag) => (
             <span className="px-2 py-1 bg-transparent border-2 border-white text-white rounded-full text-xs hover:opacity-90 hover:text-red-300 cursor-pointer  transition-all duration-100 hover:border-red-500">
-              <a href="#">{tag}</a>
+              <a href={`/articles/tag` + tag}>{tag}</a>
             </span>
           ))}
         </div>

@@ -1,6 +1,6 @@
 ---
 title: "Working with APIs"
-pubDate: "2024-06-25"
+pubDate: "2025-12-25"
 author: "Emma Davis"
 image: "/images/postImages/api.png"
 tags: ["APIs", "JavaScript", "Web Development"]

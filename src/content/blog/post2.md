@@ -1,6 +1,6 @@
 ---
 title: "Introduction to JS"
-pubDate: "2024-06-21"
+pubDate: "2024-06-22"
 author: "John Doe"
 image: "/images/postImages/js.png"
 tags: ["JS", "Web Development"]

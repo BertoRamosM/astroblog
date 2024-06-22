@@ -1,11 +1,13 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Gallery from "../components/Gallery/Gallery.astro"
+import Hero from "../components/Hero/Hero.astro"
 
 const title = "Berto Ramos Blog | Home";
 ---
 
   <MainLayout title={title}>
+   <Hero />
      <Gallery client:load/>
   </MainLayout>
 

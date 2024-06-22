@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+const allBlogArticles: CollectionEntry<'blog'>[] = await getCollection('blog');
+
+
+const sortedArticles = allBlogArticles.sort((a, b) => {
+  const dateA = new Date(a.data.pubDate);
+  const dateB = new Date(b.data.pubDate);
+  return dateB - dateA;
+});
+
+const latestArticle = sortedArticles[0];
+
+---
+
+<!-- Step 2: Render the Latest Post -->
+<a href={`/${latestArticle.slug}`} class="">
+  {latestArticle.data.image ? (
+    <img
+      src={latestArticle.data.image}
+      alt={latestArticle.data.title}
+      class="w-full h-48 object-cover hover:scale-110 transition duration-200 ease-in-out rounded-t-xl"
+    />
+  ) : (
+    <p>Loading ...</p>
+  )}
+</a>

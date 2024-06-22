@@ -1,15 +1,23 @@
 ---
-import {getCollection} from "astro:content"
-import type {collectionEntry} from "astro:content"
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 
-const allBlogArticles: collectionEntry<'blog'>[] = await getCollection('blog')
+const allArticles: CollectionEntry<'blog'>[] = await getCollection('blog');
+
+
+const allBlogArticles = allArticles.sort((a, b) => {
+  const dateA = new Date(a.data.pubDate);
+  const dateB = new Date(b.data.pubDate);
+  return dateB - dateA;
+});
 
 import GalleryCard from "./GalleryCard/GalleryCard.jsx"
 ---
 
 
 
-    <div class="h-full grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 pt-12 pb-24">
+  
+    <div class="h-full grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3  pb-24">
       {allBlogArticles ? (
         allBlogArticles.map((article) => (
           <GalleryCard key={article.slug} article={article} client:load />
