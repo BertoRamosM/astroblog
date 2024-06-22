@@ -7,13 +7,15 @@ const GalleryCard = ({ article }) => {
    };
 
   return (
+    
     <div className="mt-10 pb-4 rounded-xl backdrop-blur-xl text-white border-red-100 border-1 relative overflow-hidden group flex flex-col items-center justify-between">
+      
       <a href={`/articles/` + article.data.slug} className="w-full">
         {article.data.image ? (
           <img
             src={article.data.image}
             alt={article.data.title}
-            className="w-full h-48 object-cover hover:scale-110 transition duration-200 ease-in-out rounded-t-xl "
+            className="w-full h-48 object-cover group-hover:scale-110 transition duration-200 ease-in-out rounded-t-xl "
           />
         ) : (
           <p>Loading ...</p>
